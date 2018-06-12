@@ -1,13 +1,27 @@
 <app-bech-header></app-bech-header>
 <main role="main" class="container">
   <section class="mt-5">
-
-    <container>
-      <ng-container *ngFor="let n of apps_array" class="text-center">
-          <block>{{n}}</block>
-      </ng-container>
-    </container>
+    <div class="dash-container">
+      <div class="dash-maintext">
+          <p>Si tienes alguna duda de alguna funcionalidad, puedes revisar preguntas frecuentes sobre el funcionamiento</p>
+      </div>
+      <container>
+        <ng-container *ngFor="let n of apps_array">
+            <block class="text-center">
+              <div class="app-icon">
+                  <i class="material-icons">{{n.icon}}</i>
+              </div>
+              <div class="app-name">
+                {{n.name}}
+              </div>
+            </block>
+        </ng-container>
+      </container>
+    </div>
   </section>
-  <button type="button" class="btn btn__first-l">Cerrar</button>
+  <div class="dash-button">
+      <button type="button" class="btn btn__first-l">Cerrar</button>
+  </div>
+  
 </main>
 <app-bech-footer></app-bech-footer>
