@@ -1,0 +1,13 @@
+<app-bech-header></app-bech-header>
+<main role="main" class="container">
+  <section class="mt-5">
+
+    <container>
+      <ng-container *ngFor="let n of apps_array" class="text-center">
+          <block>{{n}}</block>
+      </ng-container>
+    </container>
+  </section>
+  <button type="button" class="btn btn__first-l">Cerrar</button>
+</main>
+<app-bech-footer></app-bech-footer>

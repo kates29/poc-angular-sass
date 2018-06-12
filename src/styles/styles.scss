@@ -1,0 +1,35 @@
+@import './base/variables';
+@import './base/mixins';
+@import './base/fonts';
+@import './base/spacing';
+@import './base/position';
+@import './components/buttons';
+@import './vendors/material-icons';
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: $open-sans;
+    font-weight: normal;
+}
+
+h1 {
+    color: $bech-orange;
+    font-family: $open-semi;
+    font-size: 1.125em;
+    width: 92%;
+}
+
+
+.icon-bech-orange{
+    color: $bech-orange;
+}
+
+.back {
+    width: 5%;
+    color:$bech-orange;
+}

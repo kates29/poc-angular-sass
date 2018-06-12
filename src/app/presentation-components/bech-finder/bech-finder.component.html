@@ -1,0 +1,14 @@
+<form>
+    <div class="input-container input-container-normal" [ngClass]="{'input-container-focused':active,'input-container-error':msgError!=''}">
+        <input class="input-data"
+        name="a_password1" [(ngModel)]="search_this" type="text"
+        placeholder="Buscador"
+        onCopy="return false" onDrag="return false" 
+        onDrop="return false" onPaste="return false"
+        [ngClass]="{'input-data-focused':active}">
+        <img src="assets/img/icon-{{search_this.length>1?'activo':'disable'}}.png" class="input-data-img" (click)="clean_input()">
+    </div>
+    <small *ngIf="msgError != ''" class="input-text-error">
+        {{msgError}}
+    </small>
+</form>

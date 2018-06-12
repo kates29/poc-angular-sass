@@ -1,0 +1,33 @@
+@import '../base/fonts';
+
+.btn {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 25px;
+    font-family: $open_semi;
+    width: 100%;
+    transition: all ease-in-out 0.2s; 
+}
+
+.btn__first-l {
+    background: #E15A0F;
+    color: #ffffff;
+    margin: 15px 0;
+}
+.btn__first-l:hover, .btn__first-l:focus {
+    background: #A71500;
+    color: #ffffff; 
+}
+.btn__first-l[disabled] {
+    opacity: 0.5;
+    background: #E15A0F;
+    color: #ffffff; 
+}
+.btn__first-l[disabled] span {
+    text-decoration: none; 
+}
+.btn__first-l--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

@@ -1,0 +1,20 @@
+container {
+    width: 100%;
+    display: inline-block;
+    font-family: "open_bold";
+    font-size: 1.3em;
+    margin-left: 3%;
+}
+block {
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: calc(33.3333% - 10px);
+    height: 3em;
+    margin: 1.5px;
+    float: left;
+    background-color: #fafafa;
+    color: #666666;
+    padding-top: 0.4em;
+    border: 1px solid #a5abb5;
+  }
