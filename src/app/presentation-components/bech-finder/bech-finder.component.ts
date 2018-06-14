@@ -8,7 +8,7 @@ import { Component, OnInit, Input, ViewChild, NgModule, } from '@angular/core';
 export class BechFinderComponent implements OnInit {
   search_this:string="";
   msgError:string="";
-  active:boolean = true;
+  active:boolean = false;
   constructor() { }
 
   ngOnInit() {
@@ -16,6 +16,10 @@ export class BechFinderComponent implements OnInit {
 
   clean_input(){
     this.search_this = "";
+  }
+
+  active_input(){
+    this.active = true;
   }
 
 

@@ -11,21 +11,27 @@ import { QuestionsService } from '../../shared/services/questions.service';
 })
 export class QuestionsInDetailComponent implements OnInit {
   questions: any[];
+  categories: any[];
   back_url = "/dashboard";
 
   constructor(private questionService: QuestionsService) { }
 
   ngOnInit() {
     this.questionService.getQuestions().subscribe(
-      
       (questions) => 
         {
-          this.questions = questions
+          this.questions = questions;
           this.questions.forEach(question => {
             this[question["collapse"]] = false;
           });
         }
       );
-    console.log(this.questions);
+    this.questionService.getCategories().subscribe(
+        (categories) => 
+          {
+            this.categories = categories;
+          }
+        );
+    console.log(this.categories);
   }
 }

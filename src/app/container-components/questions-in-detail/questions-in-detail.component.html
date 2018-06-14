@@ -1,12 +1,12 @@
 <app-bech-header [url]="back_url"></app-bech-header>
 <main role="main" class="container">
-  <section class="mt-5 mb-10">
+  <section class="mt-5 mb-20">
       <app-bech-finder #finder></app-bech-finder>
   </section>
   <section class="section-border">
     <div class="qdetail-container">
         <div class="qdetail-maintext mb-10">
-            <app-bech-select></app-bech-select>
+            <app-bech-select [categories]="categories"></app-bech-select>
         </div>
         <div role="tablist" id="accordion" aria-multiselectable="true" class="questions-container">
             <app-panel-collapse *ngFor="let item of questions | filterBy:finder.search_this" [question]="item"></app-panel-collapse>

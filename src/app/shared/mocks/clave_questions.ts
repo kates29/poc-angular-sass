@@ -16,11 +16,6 @@ export const Q_CLAVES: any[] =
        "collapse":"claves-preg_11"
     },
     {  
-       "preg":"Si recibo un aviso del Banco por bloqueo de mi tarjeta debido a una sospecha de fraude, ¿puedo desbloquearla con una nueva clave para mi tarjeta en la App?",
-       "res":"Sí. Si tu tarjeta ha sido bloqueada por sospecha de fraude, esta se listará en pantalla en tono gris. Para reactivarla debes crear una nueva clave distinta a la anterior, quedando tu tarjeta habilitada en línea con su nuevaclave y lista para volver a utilizarla de manera segura.",
-       "collapse":"claves-preg_11"
-    },
-    {  
        "preg":"¿Puedo recuperar mi clave de tarjeta si se me olvidó?",
        "res":"Sí. Si tu tarjeta ha sido bloqueada tras 3 intentos de ingreso de clave fallidos por olvido, esta se listará en pantalla en tono gris. Para reactivarla debes crear una nueva clave distinta a la anterior, quedando tu tarjeta habilitada en línea con su nueva clave y lista para volver a utilizarla de manera segura.",
        "collapse":"claves-preg_12"

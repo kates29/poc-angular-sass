@@ -2,7 +2,7 @@
     <div class="input-container input-container-normal" [ngClass]="{'input-container-focused':active,'input-container-error':msgError!=''}">
         <input class="input-data"
         name="a_password1" [(ngModel)]="search_this" type="text"
-        placeholder="Buscador"
+        placeholder="Buscador" (focus)="active_input();"
         onCopy="return false" onDrag="return false" 
         onDrop="return false" onPaste="return false"
         [ngClass]="{'input-data-focused':active}">
