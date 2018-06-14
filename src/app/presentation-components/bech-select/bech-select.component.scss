@@ -6,7 +6,7 @@
 .select {
     position: relative;
     width: 100%;
-    border-bottom: 0.1em solid rgba(0, 0, 0, 0.12);
+    border-bottom: 0.1em solid $transparent-select;
 }
 
 select:invalid { 
@@ -28,7 +28,6 @@ select:invalid {
   /* Remove focus */
   .select-text:focus {
       outline: none;
-      //border-bottom: .1em solid rgba(0,0,0, 0);
   }
   
       /* Use custom arrow */
@@ -48,7 +47,7 @@ select:invalid {
       content: '';
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
-      border-top: 6px solid rgba(0, 0, 0, 0.12);
+      border-top: 6px solid $transparent-select;
       pointer-events: none;
   }
 
