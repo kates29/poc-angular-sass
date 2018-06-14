@@ -10,18 +10,18 @@
 }
 
 .btn__first-l {
-    background: #E15A0F;
-    color: #ffffff;
+    background: $orange;
+    color: $white;
     margin: 15px 0;
 }
 .btn__first-l:hover, .btn__first-l:focus {
-    background: #A71500;
-    color: #ffffff; 
+    background: $orange-dark;
+    color: $white; 
 }
 .btn__first-l[disabled] {
     opacity: 0.5;
-    background: #E15A0F;
-    color: #ffffff; 
+    background: $orange;
+    color: $white; 
 }
 .btn__first-l[disabled] span {
     text-decoration: none; 

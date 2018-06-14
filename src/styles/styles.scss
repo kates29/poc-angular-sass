@@ -18,18 +18,26 @@ body {
 }
 
 h1 {
-    color: $bech-orange;
+    color: $orange;
     font-family: $open-semi;
     font-size: 1.125em;
     width: 92%;
 }
 
 
-.icon-bech-orange{
-    color: $bech-orange;
+.icon-bech-color{
+    color: $orange;
 }
 
 .back {
     width: 5%;
-    color:$bech-orange;
+    color:$orange;
+}
+
+.section-border{
+    box-shadow: 0 0 6px $box-shadow;
+    -webkit-box-shadow: 0 0 6px $box-shadow;
+    padding: 5px;
+    border: 1px solid $transparent-dash;
+    border-radius: 9px;
 }

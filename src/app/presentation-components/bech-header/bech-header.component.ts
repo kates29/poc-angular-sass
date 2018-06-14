@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { QuestionsService } from '../../shared/services/questions.service';
 
 @Component({
   selector: 'app-bech-header',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bech-header.component.scss']
 })
 export class BechHeaderComponent implements OnInit {
-
-  constructor() { }
+  @Input() url: any;
+  constructor(private questionService: QuestionsService) { }
 
   ngOnInit() {
   }

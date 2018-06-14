@@ -5,7 +5,7 @@
 .circle{
     display: inline-block;
     border-radius: 60px;
-    box-shadow: inset 0px 0px 0px 3px $bech-light-orange;
+    box-shadow: inset 0px 0px 0px 3px $orange-light;
     padding: 0.5em 0.6em;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -18,5 +18,5 @@
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
-    background-color: $bech-white;
+    background-color: $white;
 }

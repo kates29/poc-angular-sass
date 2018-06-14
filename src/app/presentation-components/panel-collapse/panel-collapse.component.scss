@@ -1,0 +1,53 @@
+@import '~styles/base/variables';
+@import '~styles/base/position';
+@import '~styles/base/spacing';
+
+.card{
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: initial;
+    margin-bottom: 5px;
+}
+
+.box{
+    clear: both;
+    padding: 10px 15px 10px 15px;
+    border-radius: 6px;
+    background: white;
+    transition: all ease-in-out 0.2s;
+}
+
+.active-heading{
+    background-color: $gray-lighter;
+    color: $gray-dark;
+}
+
+.flex_h5{
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.card-title {
+    padding:10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+span.contenido{
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.active-sign{
+    color: $orange;
+}
+
+.outline{
+    font-size: 20px !important;
+}
+

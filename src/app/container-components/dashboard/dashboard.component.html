@@ -1,13 +1,13 @@
 <app-bech-header></app-bech-header>
 <main role="main" class="container">
   <section class="mt-5">
-    <div class="dash-container">
+    <div class="section-border dash-container">
       <div class="dash-maintext">
           <p>Si tienes alguna duda de alguna funcionalidad, puedes revisar preguntas frecuentes sobre el funcionamiento</p>
       </div>
       <container>
         <ng-container *ngFor="let n of apps_array">
-            <block class="text-center">
+            <block class="text-center" (click)="go_to('/questions-in-detail')">
               <div class="app-icon">
                   <i class="material-icons">{{n.icon}}</i>
               </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionsService } from '../../shared/services/questions.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -21,9 +22,13 @@ export class DashboardComponent implements OnInit {
     {"name":'Más...', "icon": "access_time"}
   ];
 
-  constructor() { }
+  constructor(private questionService: QuestionsService) { }
 
   ngOnInit() {
+  }
+
+  go_to(url):void{
+    this.questionService.go_to(url);
   }
 
 }

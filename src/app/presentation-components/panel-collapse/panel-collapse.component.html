@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header" role="tab" id="heading1" class="active-heading" (click)="show_this_panel(question.collapse)"> 
+        <h5 class="card-title flex_h5">
+            <span class="contenido">
+                {{question.preg}}
+            </span>
+            <i [ngClass]="{'active-sign': this[question.collapse]}" class="material-icons pull-right outline">{{this[question.collapse] ? 'remove':'add'}}_circle_outline</i>
+        </h5>
+    </div>
+    <div id={{question.collapse}} class="card-collapse" *ngIf="this[question.collapse]" [@expandCollapse] ='this[question.collapse]'>
+        <div class="box">
+            {{question.res}}
+        </div>
+    </div>
+</div>

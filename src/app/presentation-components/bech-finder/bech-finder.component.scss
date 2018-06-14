@@ -1,28 +1,30 @@
+@import '~styles/base/variables';
+@import '~styles/base/position';
+@import '~styles/base/spacing';
+
 .input-container{
     position:relative;
-    background:#ddd;
+    background: $gray-lightest;
 }
 
 .input-container-normal{
     position: relative;
-    /*background: rgba(255,255,255,.15);*/
     background: transparent;
     display: block;
     height: 30px;
-    border-bottom: .1em solid #dddddd;
+    border-bottom: .1em solid $transparent-finder;
 }
 
 .input-container-focused{
     position: relative;
-    background: rgba(255,255,255,.15);
-    border-bottom: .1em solid #e15a0f;
+    background: $transparent-focused;
+    border-bottom: .1em solid $orange;
 }
 .input-container-error{
-    border-bottom: .1em solid #D50000;
+    border-bottom: .1em solid $red-error;
 }
 
 .input-data{
-    /*background: rgba(253, 253, 253, 0);*/
     background: transparent;
     display: block;
     width: 97%;
@@ -52,6 +54,6 @@
 
 
 .input-text-error {
-    color:#D50000;
+    color:$red-error;
     font-size: 70%;
 }
